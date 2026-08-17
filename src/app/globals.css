@@ -85,15 +85,36 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
     font-feature-settings: "rlig" 1, "calt" 1;
-    letter-spacing: -0.012em;
+    letter-spacing: -0.015em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.025em;
   }
   ::selection {
     background-color: #0049DB;
     color: #ffffff;
   }
+}
+
+/* Consistent Typographic Hierarchy Utilities */
+.heading-eyebrow {
+  @apply text-xs font-extrabold uppercase tracking-[0.25em] text-[#0049DB];
+}
+
+.heading-eyebrow-dark {
+  @apply text-xs font-extrabold uppercase tracking-[0.25em] text-[#579BFF];
+}
+
+.heading-h2 {
+  @apply text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl leading-[1.12];
+}
+
+.lead-paragraph {
+  @apply text-base sm:text-lg md:text-xl leading-relaxed text-muted-foreground;
 }
 
 /* Glassmorphism & Custom Glow Utilities */

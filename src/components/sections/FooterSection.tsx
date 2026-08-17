@@ -177,28 +177,28 @@ export function FooterSection() {
         </div>
       </div>
 
-      {/* 3. Text-Only Watermark Section Placed AFTER Main Content */}
-      <div className="relative mx-auto flex max-w-7xl items-center justify-center px-4 sm:px-6 md:px-12 pt-2 pb-20 md:pb-24">
+      {/* 3. Text-Only Watermark Section Placed AFTER Main Content - Perfectly Fitted */}
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-4 sm:px-6 md:px-12 pt-2 pb-24 md:pb-28 select-none">
         
         {/* footer-watermark-text-only SVG Container */}
-        <div className="relative overflow-hidden w-full flex justify-center select-none">
+        <div className="relative overflow-hidden w-full flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 972.80 288.00"
+            viewBox="0 0 1000 220"
             role="img"
             aria-label="OBISS HUB watermark text"
-            className="w-full h-auto max-h-56 md:max-h-72 opacity-70 transition-opacity hover:opacity-90"
+            className="w-full h-auto max-h-64 sm:max-h-80 md:max-h-96 opacity-75 transition-opacity hover:opacity-90"
           >
             <text
               x="50%"
-              y="62%"
+              y="60%"
               textAnchor="middle"
               dominantBaseline="middle"
               fill="#0049DB"
               opacity="0.10"
               fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
               fontWeight="900"
-              fontSize="155"
+              fontSize="175"
               letterSpacing="6"
             >
               OBISS HUB
@@ -206,7 +206,7 @@ export function FooterSection() {
           </svg>
 
           {/* Fade Gradient to background at bottom */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-background via-background/60 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/70 to-transparent" />
         </div>
 
         {/* 4. Copyright & Legal Links Placed Over The Text-Only Watermark At The Very End */}
