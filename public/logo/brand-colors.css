@@ -1,0 +1,16 @@
+:root {
+  /* OBISS HUB — Brand Colors */
+  --obiss-blue: #0049DB;       /* Primary brand blue */
+  --obiss-blue-light: #579BFF; /* Secondary / accent blue */
+  --obiss-grey: #F3F3F3;       /* Light neutral background */
+  --obiss-white: #FFFFFF;
+
+  /* Suggested semantic aliases */
+  --color-primary: var(--obiss-blue);
+  --color-accent: var(--obiss-blue-light);
+  --color-surface-muted: var(--obiss-grey);
+
+  /* Typography (logo wordmark uses a bold geometric sans) */
+  --font-brand: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  --font-weight-brand: 800;
+}

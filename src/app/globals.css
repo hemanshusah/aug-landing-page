@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    /* ObisHub Primary Blue #0049DB */
+    --primary: 220 100% 43%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    /* ObisHub Accent Blue #579BFF */
+    --accent: 216 100% 67%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 100% 43%;
+
+    --radius: 0.75rem;
+
+    /* ObisHub Brand Custom Tokens */
+    --obiss-blue: #0049DB;
+    --obiss-blue-light: #579BFF;
+    --obiss-grey: #F3F3F3;
+    --obiss-dark: #060D1E;
+    --obiss-navy: #0A1733;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71.4% 6.1%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 216 100% 67%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-size: 17px;
+    line-height: 1.6;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.012em;
+  }
+  ::selection {
+    background-color: #0049DB;
+    color: #ffffff;
+  }
+}
+
+/* Glassmorphism & Custom Glow Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.glass-panel-dark {
+  background: rgba(6, 13, 30, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(87, 155, 255, 0.2);
+}
+
+.glow-blue {
+  box-shadow: 0 0 50px -10px rgba(0, 73, 219, 0.25);
+}
+
+.glow-blue-lg {
+  box-shadow: 0 0 100px -20px rgba(0, 73, 219, 0.35);
+}
+
+/* Landing-01 Aesthetic Utilities */
+.bg-grid-subtle {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 73, 219, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 73, 219, 0.05) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(0, 73, 219, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.landing-card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 225, 235, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(0, 73, 219, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.landing-card-dark {
+  background: rgba(6, 13, 30, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(87, 155, 255, 0.25);
+  box-shadow: 0 8px 32px -4px rgba(0, 73, 219, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
