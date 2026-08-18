@@ -78,7 +78,7 @@ export function HeroSection({ onOpenWaitlist, variant = "A" }: HeroSectionProps)
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8">
-          
+
           {/* Eyebrow */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -122,7 +122,7 @@ export function HeroSection({ onOpenWaitlist, variant = "A" }: HeroSectionProps)
             transition={{ delay: 0.35 }}
             className="max-w-3xl text-base sm:text-lg md:text-xl text-zinc-300 leading-relaxed font-normal"
           >
-            We handle the parts of B2B growth that eat your team&apos;s week — chasing leads across five different tabs, copy-pasting numbers into a CRM nobody updates, sending the same WhatsApp message forty times by hand. ObisHub automates the outreach, pulls every channel into one dashboard, and lets your revenue operations run past what a human team can physically keep up with.
+            Automate complex sales outreach, unify fragmented communication channels, and scale your revenue operations entirely beyond human operational limits. All in one, easy to use, and easy to navigate
           </motion.p>
 
           {/* Primary & Secondary CTA with Quick Email Input */}
