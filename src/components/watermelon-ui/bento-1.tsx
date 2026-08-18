@@ -517,10 +517,6 @@ const Bento1 = () => {
           </div>
         </div>
       </div>
-
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sansation&display=swap');
-      `}</style>
     </div>
   );
 };

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { HeaderAnnouncement } from "@/components/sections/HeaderAnnouncement";
 import { NavbarSection } from "@/components/sections/NavbarSection";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { AboutUsSection } from "@/components/sections/AboutUsSection";
 import { PhilosophySection } from "@/components/sections/PhilosophySection";
 import { CapabilitiesSection } from "@/components/sections/CapabilitiesSection";
 import { BentoSection } from "@/components/sections/BentoSection";
@@ -37,9 +36,6 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <HeroSection onOpenWaitlist={(mode) => handleOpenModal(mode || "growth_potential")} />
-
-      {/* About Us: Human Strategy & Machine Speed */}
-      <AboutUsSection />
 
       {/* Philosophy: Replacing Manual Friction with Operational Ease */}
       <PhilosophySection />

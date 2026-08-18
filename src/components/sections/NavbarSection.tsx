@@ -106,8 +106,18 @@ export function NavbarSection({ onOpenWaitlist }: NavbarSectionProps) {
             <ObissLogo variant="blue" className="h-9 sm:h-10 w-auto transition-transform group-hover:scale-[1.02]" />
           </a>
 
-          {/* Desktop Navigation with ONLY Products (The Suite) */}
-          <nav className="hidden lg:flex items-center">
+          {/* Desktop Navigation with About Us and Products (The Suite) */}
+          <nav className="hidden lg:flex items-center gap-2">
+            
+            {/* 1. About Us (Direct link to dedicated /about page) */}
+            <a
+              href="/about"
+              className="rounded-full px-4 py-2 text-sm font-semibold text-muted-foreground transition-all hover:bg-muted hover:text-foreground"
+            >
+              About Us
+            </a>
+
+            {/* 2. Products (The Suite) dropdown */}
             <div
               ref={dropdownRef}
               className="relative"
@@ -238,6 +248,14 @@ export function NavbarSection({ onOpenWaitlist }: NavbarSectionProps) {
                 </div>
 
                 <div className="space-y-2">
+                  <a
+                    href="/about"
+                    onClick={() => setMobileOpen(false)}
+                    className="block rounded-lg px-3 py-2 text-sm font-bold text-foreground hover:text-[#0049DB] hover:bg-muted/60"
+                  >
+                    About Us
+                  </a>
+
                   <div className="pt-2">
                     <p className="px-3 py-1 text-xs font-bold text-muted-foreground uppercase tracking-wider">
                       Products (The Suite)
